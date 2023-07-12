@@ -1,0 +1,12 @@
+leng = int(input()) 
+arr = list(map(int, input().split())) 
+even = [] 
+odd = [] 
+for i in range(len): 
+ if i % 2 == 0: 
+ even.append(arr[i]) 
+ else: 
+ odd.append(arr[i]) 
+even = sorted(even) 
+odd = sorted(odd) 
+print(even[len(even)-2] + odd[len(odd)-2])
