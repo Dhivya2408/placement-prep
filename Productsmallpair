@@ -1,0 +1,35 @@
+# This function accepts the integers sum and arr. It is used to find the arr(j) and arr(k), where k ! = j. arr(j) and arr(k) should be the smallest elements in the array.
+
+# Keep this in mind:
+
+# If n<2 or empty, return –1.
+# If these pairs are not found, then return to zero.
+# Make sure all the values are within the integer range.
+ 
+# Example
+
+# Input:
+# Sum: 9
+# Arr: 5 4 2 3 9 1 7
+
+# Output:
+# 2
+
+
+
+sum = int(input())
+arr = list(map(int, input().split()))
+arr.sort()
+if(arr[0]+arr[1]<sum):
+    print( arr[0] * arr[1])
+else:
+    print(0)
+
+
+   
+    
+
+
+
+
+
